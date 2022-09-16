@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord Sushi</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching Now....</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">sushi.eats</a>                
+            </header>
+
+            <h1><span>The Bland</span> Eating Experience</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quisquam eligendi quam, natus, commodi rem nobis ipsam provident nesciunt enim rerum minima, quaerat quas at reiciendis explicabo recusandae necessitatibus aspernatur?</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: 'Melbourne'</p>
+                    </div>
+                    <input type="button" value="Find Food Now" id="action-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="bottom">
+        <div class="right-col">
+            <h2>Lonely. Golden</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur, quod nisi quisquam quo corrupti nostrum corporis optio iure? Est quae ducimus distinctio necessitatibus? Tempora ipsa, possimus excepturi ullam ipsam atque omnis ab, et quae inventore, quis veniam voluptas! Pariatur.</p>
+        </div>
+        <img src="images/food.jpg" alt="Picture of food in bowl">
+    </section>
+
+    <script>
+        let btn = document.getElementById('action-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click',() => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+            
+            setTimeout(() => {
+                    overlay.style.display = 'none';
+                    overlay.classList.remove('animate-overlay')
+                }, 3000) 
+        }) 
+    </script>
+</body>
+</html>
