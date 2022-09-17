@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lord Sushi</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/logo.jpg">
 </head>
 <body>
     <div class="overlay" id="overlay">
@@ -17,7 +18,7 @@
                 <a href="#">sushi.eats</a>                
             </header>
 
-            <h1><span>The Bland</span> Eating Experience</h1>
+            <h1><span>The Lonely</span> Eating Experience</h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quisquam eligendi quam, natus, commodi rem nobis ipsam provident nesciunt enim rerum minima, quaerat quas at reiciendis explicabo recusandae necessitatibus aspernatur?</p>
 
@@ -25,7 +26,7 @@
                 <form action="">
                     <div class="form-left">
                         <label for="city">Enter your city:</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="city" id="city" required>
                         <p>Example: 'Melbourne'</p>
                     </div>
                     <input type="button" value="Find Food Now" id="action-btn">
@@ -42,7 +43,13 @@
         <img src="images/food.jpg" alt="Picture of food in bowl">
     </section>
 
+    <footer>
+        <p><span class="far fa-copyright year"></span>&copy; all rights reserved by me bitch.</p>
+    </footer>
+
     <script>
+        const year = document.querySelector('.year');
+        year.innerHTML = new Date().getFullYear();
         let btn = document.getElementById('action-btn');
         let overlay = document.getElementById('overlay');
         btn.addEventListener('click',() => {

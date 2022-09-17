@@ -168,6 +168,11 @@ p{
     animation: overlay 3s forwards;
 }
 
+footer{
+    text-align: center;
+    margin: 0;
+}
+
 @media (min-width:730px){
 
         section{
